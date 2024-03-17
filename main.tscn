@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://8nqg5ehbweq5"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_mwp58"]
+[ext_resource type="Texture2D" uid="uid://cb8whpmqb82wr" path="res://yellow.png" id="2_f23lw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_mwp58")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(498, 342)
+scale = Vector2(3.1875, 1.75781)
+texture = ExtResource("2_f23lw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 379.0
+offset_top = 271.0
+offset_right = 626.0
+offset_bottom = 398.0
+text = "Hello"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(571, 326)
